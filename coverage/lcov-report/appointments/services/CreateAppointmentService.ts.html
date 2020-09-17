@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">65.52% </span>
+                <span class="strong">53.13% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>19/29</span>
+                <span class='fraction'>17/32</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">10% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>5/10</span>
+                <span class='fraction'>1/10</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">65.22% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/23</span>
+                <span class='fraction'>13/26</span>
             </div>
         
             
@@ -124,10 +124,19 @@
 <a name='L65'></a><a href='#L65'>65</a>
 <a name='L66'></a><a href='#L66'>66</a>
 <a name='L67'></a><a href='#L67'>67</a>
-<a name='L68'></a><a href='#L68'>68</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L68'></a><a href='#L68'>68</a>
+<a name='L69'></a><a href='#L69'>69</a>
+<a name='L70'></a><a href='#L70'>70</a>
+<a name='L71'></a><a href='#L71'>71</a>
+<a name='L72'></a><a href='#L72'>72</a>
+<a name='L73'></a><a href='#L73'>73</a>
+<a name='L74'></a><a href='#L74'>74</a>
+<a name='L75'></a><a href='#L75'>75</a>
+<a name='L76'></a><a href='#L76'>76</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -149,23 +158,14 @@
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-yes">6x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -173,6 +173,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -184,6 +196,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -199,6 +215,7 @@ import AppError from '@shared/errors/AppError';
 import Appointment from '../infra/typeorm/entities/Appointment';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 import INotificationsRepository from '@modules/notifications/services/INotificationsRepository';
+import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
 &nbsp;
 interface IRequest {
   provider_id: string;
@@ -214,21 +231,24 @@ class CreateAppointmentService {
 &nbsp;
     @inject('NotificationsRepository')
     private notificationsRepository: INotificationsRepository,
+&nbsp;
+    @inject('CacheProvider')
+    private cacheProvider: ICacheProvider,
     ) {}
 &nbsp;
   public async execute({ provider_id, user_id, date }: IRequest): Promise&lt;Appointment&gt; {
     const appointmentDate = startOfDay(date);
 &nbsp;
-    if (isBefore(appointmentDate, Date.now())) {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (isBefore(appointmentDate, Date.now())) {
       throw new AppError("You cant't create appointment on a past date.");
     }
 &nbsp;
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (user_id === provider_id) {
+<span class="cstat-no" title="statement not covered" >    if (user_id === provider_id) {</span>
 <span class="cstat-no" title="statement not covered" >      throw new AppError("You can't create an appointment with yourself.");</span>
     }
 &nbsp;
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (getHours(appointmentDate) &lt; 8 || <span class="branch-1 cbranch-no" title="branch not covered" >getHours(appointmentDate) &gt; 17)</span> {
-      throw new AppError("You can only appointments between 8am and 5pm.");
+<span class="cstat-no" title="statement not covered" >    if (getHours(appointmentDate) &lt; 8 || getHours(appointmentDate) &gt; 17) {</span>
+<span class="cstat-no" title="statement not covered" >      throw new AppError("You can only appointments between 8am and 5pm.");</span>
     }
 &nbsp;
     const <span class="cstat-no" title="statement not covered" >findAppointmentsInSameDate = <span class="cstat-no" title="statement not covered" >await this.appointmentsRepository.findByDate(</span></span>
@@ -252,6 +272,10 @@ class CreateAppointmentService {
       content: `Novo agendamento para ${dateFormatted}`,
     });
 &nbsp;
+    const <span class="cstat-no" title="statement not covered" >cacheKey = `provider-appointment:${provider_id}:${format(appointmentDate, 'yyyy-M-d')}`;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >    await this.cacheProvider.invalidatePrefix(cacheKey);</span>
+&nbsp;
 <span class="cstat-no" title="statement not covered" >    return appointment;</span>
   }
 &nbsp;
@@ -265,7 +289,7 @@ export default CreateAppointmentService;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Wed Sep 09 2020 21:23:36 GMT-0300 (GMT-03:00)
+                at Wed Sep 16 2020 20:50:36 GMT-0300 (GMT-03:00)
             </div>
         </div>
         <script src="../../prettify.js"></script>
